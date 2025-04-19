@@ -1,0 +1,45 @@
+/* static/style.css */
+body {
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 배치 */
+    align-items: center; /* 가로 중앙 정렬 */
+    justify-content: center; /* 세로 중앙 정렬 (뷰포트 높이 필요) */
+    height: 100vh; /* 뷰포트 전체 높이 */
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+#game-area {
+    width: 400px; /* 게임 영역 너비 */
+    height: 600px; /* 게임 영역 높이 */
+    border: 2px solid black;
+    background-color: white;
+    position: relative; /* 내부 요소들의 절대 위치 기준점 */
+    overflow: hidden; /* 게임 영역 밖으로 나간 요소 숨김 */
+    margin-top: 20px; /* 제목과의 간격 */
+}
+
+#player {
+    width: 40px; /* 플레이어 너비 */
+    height: 40px; /* 플레이어 높이 */
+    background-color: blue; /* 플레이어 색상 */
+    position: absolute; /* game-area 내부에서 절대 위치 */
+    bottom: 10px; /* 바닥에서 10px 위 */
+    left: 180px; /* 초기 가로 위치 (중앙) */
+}
+
+.obstacle { /* 장애물 스타일 (클래스로 정의) */
+    width: 50px; /* 장애물 너비 */
+    height: 20px; /* 장애물 높이 */
+    background-color: red; /* 장애물 색상 */
+    position: absolute; /* game-area 내부에서 절대 위치 */
+    top: 0; /* 위에서부터 생성 */
+    left: 100px; /* 초기 위치 (JS에서 랜덤 설정) */
+}
+
+#score {
+    margin-top: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}

@@ -12,7 +12,7 @@ let obstacles = []; // 활성화된 장애물 요소 배열
 let score = 0;
 let gameInterval; // 게임 루프 ID (나중에 중지하기 위해)
 let obstacleSpeed = 3; // 장애물 떨어지는 속도
-let obstacleFrequency = 1500; // 장애물 생성 간격 (ms)
+let obstacleFrequency = 500; // 장애물 생성 간격 (ms)
 let lastObstacleTime = 0;
 let isGameOver = false;
 

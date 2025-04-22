@@ -21,12 +21,14 @@ body {
 }
 
 #player {
-    width: 40px; /* 플레이어 너비 */
-    height: 40px; /* 플레이어 높이 */
-    background-color: blue; /* 플레이어 색상 */
-    position: absolute; /* game-area 내부에서 절대 위치 */
-    bottom: 10px; /* 바닥에서 10px 위 */
-    left: 180px; /* 초기 가로 위치 (중앙) */
+    width: 50px;  /* 사용할 이미지의 실제 너비로 설정 */
+    height: 50px; /* 사용할 이미지의 실제 높이로 설정 */
+    /* background-color: blue; */ /* 이 줄 삭제 */
+    display: block; /* 추가 */
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+    /* left 값은 JavaScript에서 설정하므로 CSS에서는 보통 생략 */
 }
 
 .obstacle { /* 장애물 스타일 (클래스로 정의) */
